@@ -17,7 +17,7 @@ Kumikuyo does not collect passwords, payment information, contacts, direct messa
 
 ## How information is used
 
-Message text is prepared for speech and sent to Google Cloud Text-to-Speech. If Google is unavailable, or if the selected language is not supported there, the text may be sent to Microsoft Edge Read Aloud instead. The generated audio is played in the connected Discord voice channel.
+Message text is prepared for speech and sent to Microsoft Edge Read Aloud. If the operator enables the optional Google voice provider, text may be sent to Google Cloud Text-to-Speech instead. The generated audio is played in the connected Discord voice channel.
 
 Kumikuyo does not sell personal information, show advertising, create user profiles, or use message content for tracking.
 
@@ -34,8 +34,8 @@ Limited service logs may contain server IDs, timing information, and error messa
 Kumikuyo relies on the following providers:
 
 - [Discord](https://discord.com/privacy) for messages, commands, and voice connections
-- [Google Cloud](https://cloud.google.com/terms/cloud-privacy-notice) for primary speech generation
-- [Microsoft](https://privacy.microsoft.com/privacystatement) for backup speech generation
+- [Microsoft](https://privacy.microsoft.com/privacystatement) for speech generation
+- [Google Cloud](https://cloud.google.com/terms/cloud-privacy-notice) when the optional Google voice provider is enabled
 
 These providers may process information in countries outside your own and apply their own privacy terms.
 
