@@ -1,0 +1,37 @@
+# Kumikuyo Terms of Service
+
+Effective: August 4, 2026
+
+By adding or using Kumikuyo, you agree to these terms.
+
+## What Kumikuyo provides
+
+Kumikuyo reads messages from a selected Discord text channel aloud in a connected voice channel. Server administrators choose where it works, and users can control their own voice preferences.
+
+## Responsible use
+
+You are responsible for the text you submit and for having the right to share it. Do not use Kumikuyo to break the law, violate another person's rights, harass others, evade platform safeguards, or breach the rules of Discord or a connected service.
+
+Server administrators are responsible for telling members when and where Kumikuyo is active and for choosing suitable channel permissions.
+
+## Availability
+
+Kumikuyo is provided as available, without a promise that it will always be online, error-free, or suitable for every purpose. Features may change or stop without notice. Speech may occasionally be delayed, inaccurate, or unavailable.
+
+## Third-party services
+
+Kumikuyo depends on Discord, Google Cloud, and Microsoft services. Their own terms and policies also apply when their services are used.
+
+## Suspension and termination
+
+Access may be limited or removed when needed to protect users, the service, or third parties, or when these terms are violated. You may stop using Kumikuyo at any time by removing it from your server.
+
+## Liability
+
+To the fullest extent allowed by law, the Kumikuyo operator is not responsible for indirect, incidental, or consequential loss arising from use of the service.
+
+## Changes
+
+These terms may be updated as the service changes. Continued use after an update means you accept the revised terms.
+
+Questions can be directed to the administrator who added Kumikuyo to your Discord server.
