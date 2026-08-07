@@ -1,8 +1,8 @@
-# Kumikuyo Legal
+# Kuyo Legal
 
-Public policy documents for the private Kumikuyo Discord bot.
+Public policy documents for the private Kuyo Discord bot.
 
 - [Privacy Policy](PRIVACY.md)
 - [Terms of Service](TERMS.md)
 
-Kumikuyo's source code and credentials are not published in this repository.
+Kuyo's source code and credentials are not published in this repository.
