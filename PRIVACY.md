@@ -1,8 +1,8 @@
 # Kuyo Privacy Policy
 
-Effective: August 7, 2026
+Effective: August 10, 2026
 
-Kuyo is a Discord bot that reads selected text messages aloud. It also contains an optional character-reply feature for explicit mentions, which is currently disabled by default. This policy explains what information Kuyo uses and how it is handled.
+Kuyo is a Discord bot that reads selected text messages aloud. It also contains an optional character-reply feature for explicit mentions, which the service operator may enable or disable. This policy explains what information Kuyo uses and how it is handled.
 
 ## Information we use
 
@@ -20,7 +20,7 @@ Kuyo does not collect passwords, payment information, contacts, or direct messag
 
 Message text is prepared for speech and sent to Microsoft Edge Read Aloud by default. If the service operator enables Google Chirp 3 HD, text is sent to Google Cloud Text-to-Speech and falls back to Microsoft Edge Read Aloud when Google fails before returning audio or does not support the detected language. The generated audio is played in the connected Discord voice channel.
 
-The character-reply feature is currently disabled, so mention messages are not sent to OpenAI. If the service operator enables it, a non-empty message that explicitly mentions Kuyo is reduced to remove Discord identifiers and URLs, limited in length, and sent to the OpenAI Responses API. GPT-5.6 Luna writes Kuyo's short reply in the language of the message. Application code then checks that reply against a fixed grammar — a length limit, letters and simple punctuation only, and no digits, links, mentions, or markup — and replaces it with a curated character line if it does not fit. Each request contains only the current message and Kuyo's own previous line; no conversation history is sent or kept. API response storage is disabled for these requests. Messages without an explicit Kuyo mention, and mentions with no other text, are not sent to OpenAI.
+When the service operator enables the character-reply feature, a non-empty message that explicitly mentions Kuyo is reduced to remove Discord identifiers and URLs, limited in length, and sent to the OpenAI Responses API. GPT-5.6 Luna writes Kuyo's short reply in the language of the message. Application code then checks that reply against a fixed grammar — a length limit, letters and simple punctuation only, and no digits, links, mentions, or markup — and replaces it with a curated character line if it does not fit. Each request contains only the current message and Kuyo's own previous line; no conversation history is sent or kept. API response storage is disabled for these requests. Messages without an explicit Kuyo mention, and mentions with no other text, are not sent to OpenAI.
 
 Kuyo does not sell personal information, show advertising, create user profiles, or use message content for tracking.
 
