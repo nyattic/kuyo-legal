@@ -1,6 +1,6 @@
 # Kuyo Privacy Policy
 
-Effective: August 12, 2026
+Effective: August 13, 2026
 
 Kuyo is a Discord bot that reads selected text messages aloud. It also contains an optional character-reply feature for explicit mentions, which the service operator may enable or disable. This policy explains what information Kuyo uses and how it is handled.
 
@@ -20,17 +20,17 @@ Kuyo does not collect passwords, payment information, contacts, or direct messag
 
 Message text is prepared for speech and sent to Microsoft Edge Read Aloud by default. If the service operator enables Google Chirp 3 HD, text is sent to Google Cloud Text-to-Speech and falls back to Microsoft Edge Read Aloud when Google fails before returning audio or does not support the detected language. The generated audio is played in the connected Discord voice channel.
 
-When the service operator enables the character-reply feature, a non-empty message that explicitly mentions Kuyo is reduced to remove Discord identifiers and URLs and limited in length. The current message and up to three recent exchanges with that member from the previous 30 minutes are sent to the OpenAI Responses API. GPT-5.6 Luna writes Kuyo's short reply in the language of the message. Application code then checks that reply against a fixed grammar — a length limit, letters and simple punctuation, with at most four digits in a simple answer and no long number sequences, links, mentions, or markup — and replaces it with a curated character line if it does not fit. API response storage is disabled. Messages without an explicit Kuyo mention, and mentions with no other text, are not sent to OpenAI.
+When the service operator enables the character-reply feature, a non-empty message that explicitly mentions Kuyo is reduced to remove Discord identifiers, links, code blocks, and spoiler-hidden text, and limited in length. The current message and up to three recent exchanges with that member from the previous 30 minutes are sent to the OpenAI Responses API. GPT-5.6 Luna writes Kuyo's short reply in the language of the message. Application code then checks that reply against a fixed grammar — a length limit, letters and simple punctuation, with at most four digits in a simple answer, no long number sequences, no digits next to words such as phone number or password, and no links, mentions, or markup — and replaces it with a curated character line if it does not fit. Questions about Kuyo's own instructions, together with knowledge questions and sexual talk, are always answered from that curated set rather than in the model's words. API response storage is disabled, and the only account information sent with a request is a one-way identifier derived from the Discord user ID with a secret key, used by OpenAI for abuse prevention; the ID itself is not sent. Messages without an explicit Kuyo mention, and mentions with no other text, are not sent to OpenAI.
 
 Kuyo does not sell personal information, show advertising, create user profiles, or use message content for tracking.
 
 ## Storage and retention
 
-Kuyo does not persist raw message text, generated audio, or conversation history. When character replies are enabled, up to three recent exchanges per member are held in process memory for 30 minutes so a short conversation can continue. This short-term memory is also cleared when the bot restarts or the member deletes all personal data.
+Kuyo does not persist raw message text, generated audio, or conversation history. When character replies are enabled, up to three recent exchanges per member are held in process memory for 30 minutes so a short conversation can continue. Each server keeps its own memory: what a member says in one server is never sent along with their conversation in another. This short-term memory is also cleared when the bot restarts or the member deletes all personal data.
 
 Server settings and pronunciation entries are kept while the bot remains in the server. They are deleted when the bot is removed. Voice preferences are shared across servers that use Kuyo and remain until the user deletes them or the service is discontinued.
 
-Limited service logs may contain server IDs, timing information, and error messages. Message text is not written to these logs. Logs are automatically rotated and used only to keep the service reliable.
+Limited service logs may contain server IDs, Discord user IDs, timing information, and error messages. Message text is not written to these logs. Logs are automatically rotated and used only to keep the service reliable.
 
 ## Service providers
 
@@ -45,7 +45,7 @@ These providers may process information in countries outside your own and apply 
 
 ## Your choices and rights
 
-Use `/kuyo`, then open `My data`, to see or delete the voice settings and chosen name linked to your Discord account. Deleting all personal data also clears the current short-term conversation memory.
+Use `/kuyo`, then open `My data`, to see or delete the voice settings and chosen name linked to your Discord account. Deleting all personal data also clears the short-term conversation memory, in every server at once.
 
 Server administrators can view or remove custom pronunciation entries from `/kuyo` → `Server settings` → `Pronunciation`. Removing Kuyo from a server deletes that server's settings and pronunciation entries.
 
